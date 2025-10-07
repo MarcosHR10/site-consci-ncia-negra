@@ -1,0 +1,46 @@
+lista=[]
+def peneira():
+    for i in range(1):
+        ano_de_nascimento= str(input("Seu ano de nascimento, jovem! "))
+        if ano_de_nascimento=="2008" or ano_de_nascimento=="2009":
+            nome= str(input("Seu nome, craque! "))
+            nomee= nome.upper()
+            ano1=str(input("dia que nasceu "))
+            ano2=str(input("mês que nasceu "))
+            ano3=str(input("ano que nasceu "))
+            if ano3=="2009" or ano3=="2008":
+                jogador= nomee+" | "+ano1+"/"+ano2+"/"+ano3
+                lista.append(jogador)                                     
+                print(lista)
+            else:
+                print("Não pode jogar aqui")
+                print(peneira())
+        elif ano_de_nascimento>"2010" or ano_de_nascimento<"2007":
+            print("Não pode jogar aqui")
+            print(peneira())
+        else:
+            print("Não pode jogar aqui")
+            print(peneira())
+            return (peneira)
+for i in range(3):
+    ano_de_nascimento= str(input("Seu ano de nascimento, jovem! "))
+    if ano_de_nascimento=="2009" or ano_de_nascimento=="2008": 
+        nome= str(input("Seu nome, craque! "))
+        nomee=nome.upper()
+        ano1=str(input("dia que nasceu "))
+        ano2=str(input("mês que nasceu "))
+        ano3=str(input("ano que nasceu "))
+        if ano3=="2009" or ano3=="2008":
+            jogador= nomee+" | "+ano1+"/"+ano2+"/"+ano3
+            lista.append(jogador)
+            print(lista)
+        else:
+            print("Não pode jogar aqui")
+            print(peneira())
+    elif ano_de_nascimento>"2009" or ano_de_nascimento<"2008":
+        print("Não pode jogar aqui")
+        print(peneira())
+    
+    else:
+        print("Não pode jogar aqui")
+        print(peneira())
