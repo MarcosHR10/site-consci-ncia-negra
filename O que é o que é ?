@@ -1,0 +1,53 @@
+def chance():
+    print(f"1° dica: {dica[0]}")
+    oquee=str(input("O que é o que é ? | Futebol "))
+    if oquee=="Pelé".strip().lower():
+        print("Acertou!")
+        print(Pelé)
+        print(pele)
+    else:
+        print("Errou!")
+        print(f"2° dica: {dica[1]}")
+        oquee=str(input("O que é o que é ? | Futebol "))
+        if oquee=="Pelé".strip().lower():
+            print("Acertou!")
+            print(Pelé)
+            print(pele)
+        else:
+            print("Errou!")
+            print(f"3° dica: {dica[2]}")
+            oquee=str(input("O que é o que é ? | Futebol "))
+            if oquee=="Pelé".strip().lower():
+                print("Acertou!")
+                print(Pelé)
+                print(pele)
+            else:
+                print("Errou!")
+                print(f"4° dica: {dica[3]}")
+                oquee=str(input("O que é o que é ? | Futebol "))
+                if oquee=="Pelé".strip().lower():
+                    print("Acertou!")
+                    print(Pelé)
+                    print(pele)
+                else:
+                    print("Errou!")
+                    print(f"5° dica: {dica[4]}")
+                    oquee=str(input("O que é o que é ? | Futebol "))
+                    if oquee=="Pelé".strip().lower():
+                        print("Acertou!")
+                        print(Pelé)
+                        print(pele)
+                    else:
+                        print('Não foi dessa vez. Tente de novo!')
+    return (chance)                   
+oquee=str(input("O que é o que é ? | Futebol "))
+dica=["É jogador", "Jogou em time brasileiro", "jogou na seleção brasileira", "É aposentado", "O maior jogador da história deste esporte"] 
+Pelé="Pelé foi amplamente reconhecido e chamado de 'cidadão do mundo', embora não seja um título oficial de cidadania de um país, mas sim uma honraria simbólica. O reconhecimento se deu por sua fama global e seu impacto que ultrapassou o futebol." 
+pele="'Cidadão global' vai além de uma cidadania nacional e refere-se a uma pessoa que se vê como parte de uma comunidade global e age de forma a definir seus valores e práticas."
+if oquee=="Pelé".strip().lower():
+    print("Acertou!")
+    print(Pelé)
+    print(pele)
+else:
+    print("Errou!")
+    print(chance())
